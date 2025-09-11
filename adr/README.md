@@ -12,17 +12,17 @@
 
 ```mermaid
 stateDiagram-v2
-    state "Pull request with new ADR" as pr
-    state "Pull request ready to merge" as ready
+    state "Pull request (PR) with new ADR" as pr
+    state "PR ready to merge" as ready
     state "Consortium decision" as merged
     state "Proposal rejected" as rejected
 
     [*] --> pr: Any consortium participant proposes
     pr --> ready: Consortium participants review and share advice, authors improve the ADR including summarised advice
 
-    ready --> merged: WP4 Architecture group merges
+    ready --> merged: WP4 Architecture group merges the PR
     merged --> [*]
 
-    ready --> rejected: WP4 Architecture group rejects
+    ready --> rejected: WP4 Architecture group closes the PR
     rejected --> [*]
 ```
