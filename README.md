@@ -1,3 +1,6 @@
+> [!NOTE]
+> [WE BUILD](https://www.webuildconsortium.eu/) is adopting and adapting this repository, starting with [architecture decision records](adr/README.md).
+
 <h1 align="center">
     EWC - EUDI Wallet Request for Comments (RFCs)
 </h1>
