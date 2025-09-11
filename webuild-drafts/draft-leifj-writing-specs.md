@@ -1,4 +1,4 @@
-## WEBUILD Draft: guidelines for webuild drafts and specifications 
+## WE BUILD Draft: guidelines for webuild drafts and specifications 
 
 * Version: 1.0
 * Authors: Leif Johansson <leifj@sunet.se>
@@ -13,7 +13,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 # Background
 
-The purpose of the WEBUILD project is to further the development of the EUID wallet ecosystem by piloting a set of use cases. The purpose of the WE BUILD specification series is to provide written guidance for implementers and deployers involved in those pilots.
+The purpose of the WE BUILD project is to further the development of the EUID wallet ecosystem by piloting a set of use cases. The purpose of the WE BUILD specification series is to provide written guidance for implementers and deployers involved in those pilots.
 
 # WE BUILD Drafts
 
