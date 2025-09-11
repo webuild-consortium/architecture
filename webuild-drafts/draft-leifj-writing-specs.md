@@ -1,11 +1,11 @@
-## WE BUILD Draft: guidelines for webuild drafts and specifications 
+## WE BUILD Drafts and ADRs: guidelines for webuild drafts and specifications 
 
 * Version: 1.0
 * Authors: Leif Johansson <leifj@sunet.se>
 
 # Abstract
 
-This document contains a set of guidelines for the WE BUILD specification series.
+This document contains a set of guidelines and procedures for the WE BUILD specification series.
 
 # Terminology
 
@@ -14,6 +14,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 # Background
 
 The purpose of the WE BUILD project is to further the development of the EUID wallet ecosystem by piloting a set of use cases. The purpose of the WE BUILD specification series is to provide written guidance for implementers and deployers involved in those pilots.
+
+This document contains a set of guidelines for spec authors aswell as rules for how to do change control and publication of WE BUILD Drafts and ADRs. 
 
 # WE BUILD Drafts
 
