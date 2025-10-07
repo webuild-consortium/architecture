@@ -30,9 +30,9 @@ Input is collected in two tables.
    - **Use case #** – Identifier for each use case.
    - **As a [...]** – Defines the user.
    - **[will/ could/ will not] pilot** – Indicates whether the user story is planned to be piloted.
-   - **User story** (“As a [...] I want to [create/ validate/ enable] QES/QEAA of document type [...] so that [...]”) – captures the usage of the trust service.
+   - **User story** (“As a [...] I want to [create/ validate/ enable] QES/QEAA of document type [...] so that [...]”) – captures the usage of the trust service. When re-using the template, QES/QEAA can be replaced by the questionned service. 
      
-   Reference sheet: [User stories QES/QEAA](https://docs.google.com/spreadsheets/u/1/d/1djcCeJJbmnMvfWQ2htW0bjEErrrELmfemJ4pG5Qh-aU)
+   Reference working document of QTSP group: [User stories QES/QEAA](https://docs.google.com/spreadsheets/u/1/d/1djcCeJJbmnMvfWQ2htW0bjEErrrELmfemJ4pG5Qh-aU)
 
 2. **Use cases’ QEAA needs**  
    This table captures the needs for QEAA in more detail, elaborating on the required roles and technology for the use cases.  
@@ -41,14 +41,14 @@ Input is collected in two tables.
    - **Responder's organization** – Identifies the organization providing the input.
    - **Use case #** – Identifier for each use case.
    - **QEAA scheme name** – Identifies the specific scheme involved. Aligned with data schemes from [Attestation Rulebooks Catalog](https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog) where possible.
-   - **Authentic source** – Indicates the origin of the attribute.
-   -  **QEAA provider** – Shows which party issues the electronic attestation, can be a role or specific organization.
-   -  **Wallet unit** – Indicates which wallet instance or environment is relevant.
-   -  **Relying party instance** – Identifies the specific instance consuming the QEAA.
-   -  **Relying party** – Identifies the organization relying on the QEAA.
+   - **Authentic source** – Indicates the repository or system, held under the responsibility of a public sector body or private entity, that contains and provides attributes about a natural or legal person or object and that is considered to be a primary source of that information or recognised as authentic in accordance with Union or national law, including administrative practice
+   -  **Issuer** – Shows which organization issues the electronic attestation, can be a role (such as QTSPs for QEAAs) or a specific organization.
+   -  **Wallet unit** – means a unique configuration of a wallet solution that includes wallet instances, wallet secure cryptographic applications and wallet secure cryptographic devices provided by a wallet provider to an individual wallet user.
+   -  **Relying party instance** – Identifies the software and/or hardware module with the capability to interact with a Wallet Unit and to perform Relying Party authentication, that is controlled by a Relying Party.
+   -  **Relying party** – Identifies the natural or legal person that relies upon electronic identification, EUDI Wallets or other electronic identification means, or upon a trust service - QEAA in the QTSP working document.
 
-   Reference sheet: [Use cases’ QEAA needs](https://docs.google.com/spreadsheets/d/1rAqVdg3GGjuWVZqy0thjKPg6PG-qNGAeldjiPRhPens)
-
+   Reference working document of QTSP group: [Use cases’ QEAA needs](https://docs.google.com/spreadsheets/d/1rAqVdg3GGjuWVZqy0thjKPg6PG-qNGAeldjiPRhPens)
+   
 # References
 
 - User stories QES/QEAA: https://docs.google.com/spreadsheets/u/1/d/1djcCeJJbmnMvfWQ2htW0bjEErrrELmfemJ4pG5Qh-aU
