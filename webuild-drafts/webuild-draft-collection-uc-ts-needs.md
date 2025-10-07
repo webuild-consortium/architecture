@@ -20,7 +20,7 @@ This document introduces the the approach by the QTSP group for capturing both Q
 
 # Collection of use cases' needs
 
-Input is collected in two tables. 
+Input for user stories and needs is collected in two tables. These tables can be reused by using the following columns in the preferred format specified to the considered service.
 
 1. **User stories QES/QEAA**  
    This table captures use cases in the form of user stories. The user stories are written from the perspective of the user, and not the technology provider. This allows us to focus on what the user wants to achieve, not on how the technology should implement it.  
@@ -30,7 +30,7 @@ Input is collected in two tables.
    - **Use case #** – Identifier for each use case.
    - **As a [...]** – Defines the user.
    - **[will/ could/ will not] pilot** – Indicates whether the user story is planned to be piloted.
-   - **User story** (“As a [...] I want to [create/ validate/ enable] QES/QEAA of document type [...] so that [...]”) – captures the usage of the trust service. When re-using the template, QES/QEAA can be replaced by the questionned service. 
+   - **User story** (“As a [...] I want to [create/ validate/ enable] QES/QEAA of document type [...] so that [...]”) – captures the usage of the trust service. When re-using the template, QES/QEAA can be replaced by the considered service. 
      
    Reference working document of QTSP group: [User stories QES/QEAA](https://docs.google.com/spreadsheets/u/1/d/1djcCeJJbmnMvfWQ2htW0bjEErrrELmfemJ4pG5Qh-aU)
 
