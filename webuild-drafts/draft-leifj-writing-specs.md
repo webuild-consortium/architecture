@@ -20,7 +20,7 @@ This document contains a set of guidelines for spec authors aswell as rules for 
 
 The WE BUILD Draft series represent proposals under discussion. Each draft has a set of authors that own change control for the document in question. The authors are expected to consider all bona fide PRs presented on github for review and SHOULD process (either by accepting or rejecting) them in a timely fashion.
 
-Discussion about PS should be done in the PR itself or in any associated issues.
+Discussion about a PR should be done in the PR itself or in any associated issues.
 
 # WE BUILD ADRs
 
