@@ -1,6 +1,5 @@
 ## WE BUILD Drafts and ADRs: guidelines for webuild drafts and specifications 
 
-* Version: 1.0
 * Authors: Leif Johansson <leifj@sunet.se>
 
 # Abstract
