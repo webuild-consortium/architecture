@@ -8,7 +8,7 @@
 
 For the first usage of the interoperability testbed, and for the first increment, it is required to enable trust between issuers, wallets, and verifiers. EWC proposed a trust evaluation mechanism (see [EWC RFC 012](../ewc-rfcs/ewc-rfc012-trust-mechanism.md)) including an [Trusted List](https://github.com/EWC-consortium/ewc-trust-list).
 
-As part of the Mapping Task Force, we’ve found that at least the QTSP group needs a similar approach for the first QEAAs to test. We need to specify who provides this.
+According to the evaluation made so far by the Mapping Task Force, at least the QTSP group needs a similar approach for the first QEAAs to test. We need to specify who provides this.
 
 At ETSI, the TS 119 612 series is being updated to support the European Digital Identity. This may require changes to the trust mechanism.
 
