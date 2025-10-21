@@ -10,7 +10,7 @@ For the first usage of the interoperability testbed, and for the first increment
 
 According to the evaluation made so far by the Mapping Task Force, at least the QTSP group needs a similar approach for the first QEAAs to test. We need to specify who provides this.
 
-At ETSI, the TS 119 612 series is being updated to support the European Digital Identity. This may require changes to the trust mechanism.
+At ETSI, the TS 119 612 ([V2.3.1](https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.03.01_60/ts_119612v020301p.pdf) at time of this release) series is being updated to support the European Digital Identity. This may require further alignment with the current EWC implementations.
 
 ## Decision
 
