@@ -6,7 +6,7 @@
 
 ## Context
 
-For the first usage of the interoperability testbed, and for the first increment, we need to enable trust between issuers, wallets, and verifiers. EWC had a trust mechanism ([EWC RFC 012](../ewc-rfcs/ewc-rfc012-trust-mechanism.md)) including an [EWC Trust List](https://github.com/EWC-consortium/ewc-trust-list).
+For the first usage of the interoperability testbed, and for the first increment, it is required to enable trust between issuers, wallets, and verifiers. EWC proposed a trust evaluation mechanism (see [EWC RFC 012](../ewc-rfcs/ewc-rfc012-trust-mechanism.md)) including an [Trusted List](https://github.com/EWC-consortium/ewc-trust-list).
 
 As part of the Mapping Task Force, we’ve found that at least the QTSP group needs a similar approach for the first QEAAs to test. We need to specify who provides this.
 
