@@ -22,7 +22,7 @@ The wallets in the WP4 Wallet provider group include validation with the trusted
 
 The relying parties in WP2/3/4 include validation with the trusted lists in their verification processes.
 
-The starting point is EWC RFC 012. If changes are needed, these will be specified in new ADRs, potentially referencing new WE BUILD Drafts.
+The starting point is TS 119 612 V2.3.1. Since a profile and implementation guidance are likely needed, and EWC RFC 012 has not yet been effective in practice, these should be specified in separate WE BUILD architecture documents.
 
 ## Consequences
 
