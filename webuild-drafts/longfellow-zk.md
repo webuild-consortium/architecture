@@ -127,7 +127,7 @@ This approach builds on the ZKP-optimized SD-JWT VC, but introduces a compact, p
 An example of such a format could use the following fixed-size byte encoding:
 
 - **64 bytes**: Pedersen commitment
-- **65 bytes**: Uncompressed proof-of-possession (PoP) key
+- **64 bytes**: Uncompressed proof-of-possession (PoP) key
 - **5 bytes**: Expiration data
 - **32 bytes**: Token identifier (used for revocation)
 
