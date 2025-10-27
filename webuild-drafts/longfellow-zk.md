@@ -94,7 +94,7 @@ The SD-JWT VC specification permits several optimizations that can be applied wi
    The inclusion of digest values (`_sd`) is optional. Omitting it significantly improves performance and eliminates the need for multiple fields and, consequently, witness consistency tests.
 
 2. **No `cnf` or KB-JWT:**
-    A key insight is that the prover presents a proof of a verifiable computation over the presentation and **not** the SD-JWT VC itself. As a result, `cnf` and KB-JWT are not required for specification compliance. Their omission eliminates the need for token nesting and simplifies proof-of-possession logic. Instead, PoP is done using a new attribute `zk_cnf` that replicates `cnf` but uses a flat structure.
+    A key insight is that the prover presents a proof of a verifiable computation over the presentation and **not** the SD-JWT VC itself. As a result, `cnf` and KB-JWT are not required for specification compliance. Their omission eliminates the need for token nesting and simplifies proof-of-possession logic. Instead, PoP is done using a new attribute `zk_cnf` that replicates `cnf` but uses a flat structure. Note that the PoP key can be hardware-bound. This prevents direct use of the private key in the ZK circuit, ruling out standard discrete-log knowledge proofs. One option is for the prover to generate a fresh signature over the witness and include this signature as public input to the circuit for validation.
 
 3. **Limited predicates**
    Initially focusing on simple predicates (e.g., equality and range) allows for simple and auditable circuit implementations. Most use cases can be supported this way. Range predicates (e.g., for age or expiration checks) can be added incrementally as circuits are audited.
@@ -110,27 +110,18 @@ A pragmatic mitigation is to restrict ZKP usage to attributes where disclosure c
 
 The ZKP optimized SD-JWT VC applies the above optimizations but targets a few additional ones. Specifically, it introduces an inner-proof + outer-proof approach where the longfellow-zk circuit verifies only the issuer signature over the witness (inner-proof), and where the verifier uses an issuer signed commitment to validate user attributes (outer-proof). This way, most of the complexity sources are moved outside of the circuit to where they are much easier to audit and certify. Concretely, we now do the following:
 
-1. Reduce the number of user attributes that the circuit needs to handle to one. This single one is an issuer signed Pedersen commitment, $C$, of either:
-    * Attribute values. Here $C = H_0 + m_1H_1 + ... + m_n H_n$
+1. Reduce the number of user attributes that the circuit needs to handle to one. This single one could be an issuer signed Pedersen commitment, $C$, of either:
+    * Attribute values. Here $C = H_0 + m_1H_1 + ... + m_n H_n$.
     * Polynomial coefficients. Here $C$ is computed based on polynomial coefficients of the polynomial that allows for claims inclusion tests.
 2. Use fixed length and type data fields in a mimimal SD-JWT VC that includes only the following (three SHA256 blocks):
     * 32 byte Pedersen commitment
-    * 65 byte `zk_cnf` claim for user PoP
+    * 64 byte `zk_cnf` claim for user PoP
     * 5 byte of expiration information
     * 16 byte of token identifier for revocation
 3. Use RFC 7797 for un-encoded payload. This may be an option to consider to avoid decoding.
 
 ### ZKP optimized web token (ZWT)
 
-This approach builds on the ZKP-optimized SD-JWT VC, but introduces a compact, purpose-built attestation format—conceptually similar to a TCP header.
-
-An example of such a format could use the following fixed-size byte encoding:
-
-- **64 bytes**: Pedersen commitment
-- **64 bytes**: Uncompressed proof-of-possession (PoP) key
-- **5 bytes**: Expiration data
-- **32 bytes**: Token identifier (used for revocation)
-
-The total payload fits within three SHA-256 blocks, maintaining acceptable performance for circuit evaluation.
+This approach builds on the ZKP-optimized SD-JWT VC, but introduces a compact, purpose-built attestation format—conceptually similar to a TCP header. As with the ZKP optimized SD-JWT VC, the total payload fits within three SHA-256 blocks, maintaining acceptable performance for circuit evaluation.
 
 Additional proposals include the use of 9-bit bytes to enable features such as single-byte keys, escape characters, and extended encoding schemes. This can simplify circuit logic as MSB tagging is relatively easy. But it will likely not be useful if we can agree on a commit-and-prove model.
