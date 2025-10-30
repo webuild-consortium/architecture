@@ -24,6 +24,7 @@ Actors performing multiple roles MUST meet all requirements relevant to those ro
 * PID Providers (including LPID) MUST implement [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
 * EAA Providers (including QEAA, PuB-EAA) MUST implement [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
 * Relying Parties MUST implement [OpenID4VP version 1.0](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
+* Wallet Providers MUST implement in wallet solutions [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html) and [OpenID4VP version 1.0](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
 
 ## Consequences
 
