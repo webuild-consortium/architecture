@@ -31,6 +31,8 @@ Actors performing multiple roles MUST meet all requirements relevant to those ro
 Implementations following this profile ensure interoperability between actors within the WE BUILD ecosystem.
 Actors can verify conformance through testing against other implementations.
 
+The selected protocols may not suffice for async or proximity use cases. Once the requirements for such use cases appear, the decision may need to be nuanced to enable for example Relying Parties to implement different protocols.
+
 ## Advice
 
 Once merged, this is our consortium’s decision. This does not mean all participants agree it is the best possible decision. In the decision making process, we have heard the following advice.
