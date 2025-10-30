@@ -12,6 +12,8 @@ This implementation is guided by the Architecture and Reference Framework (ARF),
 To achieve mandatory interoperability for Issuance and Presentation of Person Identification Data (PID) and Electronic Attestations of Attributes (EAA), implementing regulations require compliance with foundational standards.
 OID4VCI (Issuance) and OID4VP (Presentation) are adopted as the ARF-recommended baseline protocols for technically implementing the required data models and transport mechanisms in the pilot.
 
+While the architecture decision to [Publish consortium trusted lists](trusted-lists.md) based on TS 119 612 has already been recorded, the consortium also needs a selection of PID/EAA issuance and presentation protocols.
+
 ## Decision
 
 Each recognized role in the WE BUILD project - PID/LPID Providers, EAA Providers (including QEAA, Pub-EAA), Relying Parties, Wallet Providers, and Trust Service Providers — is REQUIRED to implement the corresponding technical profiles described here.
