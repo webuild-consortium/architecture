@@ -21,9 +21,8 @@ While the architecture decision to [Publish consortium trusted lists](trusted-li
 Each recognized role in the WE BUILD project - PID/LPID Providers, EAA Providers (including QEAA, Pub-EAA), Relying Parties, Wallet Providers, and Trust Service Providers — is REQUIRED to implement the corresponding technical profiles described here.
 Actors performing multiple roles MUST meet all requirements relevant to those roles.
 
-* PID Providers (including LPID) MUST implement [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
-* EAA Providers (including QEAA, PuB-EAA) MUST implement [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
-* Relying Parties MUST implement [OpenID4VP version 1.0](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
+* Issuers MUST implement [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
+* Verifiers MUST implement [OpenID4VP version 1.0](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
 * Wallet Providers MUST implement in wallet solutions [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html) and [OpenID4VP version 1.0](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
 
 ## Consequences
