@@ -6,13 +6,13 @@
 
 ## Context
 
-To issue PID and eAA, it is necessary to specify a digital document format such as mdoc or a JWT-based one. While the EUDI implementing acts specify baseline standards, these specifications may not suffice for WE BUILD. For example, some specified standards need further profiling for interoperability. For some WE BUILD use cases, other standards may be necessary, for example to enable asynchronous interactions with EU Business Wallets, or to enable legal, technical and semantic interoperability with existing systems.
+To issue PID, LPID, QeAA, PuB-eAA and eAA (“digital document” henceforth), it is necessary to specify a digital document format such as mdoc or a JWT-based one. While the EUDI implementing acts specify baseline standards, these specifications may not suffice for WE BUILD. For example, some specified standards need further profiling for interoperability. For some WE BUILD use cases, other standards may be necessary, for example to enable asynchronous interactions with EU Business Wallets, or to enable legal, technical and semantic interoperability with existing systems.
 
 Several WP4 groups are stakeholders in this, for example:
 
 - WP4 Architecture, for conformance to and efficient implementation of the EUDI framework
 - WP4 PID and LPID Providers, for technical details of the provision of PID and LPID
-- WP4 QTSPs, for technical details of the issuance and validation of QEAA
+- WP4 QTSPs, for technical details of the issuance and validation of QeAA
 - WP4 Semantics, where the specification affects semantic interoperability
 
 To ensure a streamlined process, the Mapping Task Force has evaluated the possible dependencies within WP4.
