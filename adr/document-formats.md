@@ -29,7 +29,7 @@ The WP4 Semantics group delivers vocabularies, with mapping to the specified dig
 
 ## Consequences
 
-This decision clarifies the decision process regarding digital document formats.
+This decision clarifies the decision process regarding digital document formats. Other decisions should be recorded soon after to specify the formats for PID, LPID, QeAA, PuB-EAA and eAA for European Digital Identity Wallets and for European Business Wallets.
 
 This decision creates an indirection between the vocabularies and the digital document formats, so that the extra translation is needed.
 
