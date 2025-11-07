@@ -29,13 +29,13 @@ Furthermore, modelling the complex attestations for the following WeBuild use ca
 * SC2 'Trusted data sharing for data spaces' regarding complex policies for negotation and access as well as roles for automated actors and devices   
 * PA3 'Corporate banking and account opening': AML requires KYC and including delegation of authority
 
-Besides the semantic interoperability on business level, existing eco systems also require semantic compatibility on technical level:
+In addition to semantic interoperability at a business level, existing ecosystems also require semantic compatibility at a technical level:
 
 * Verifiable credentials: [Verfiable Credentials Vocabulary](https://www.w3.org/2018/credentials/)
 * Linked Data: [JSON-based Serialization for Linked Data](https://www.w3.org/TR/json-ld11/)
 * Decentralized Identifiers: [DID](https://www.w3.org/ns/did/v1)
 
-In addition to semantic interoperability at a business level, existing ecosystems also require semantic compatibility at a technical level.
+Finally, JSON-LD, the chosen serialisation format for W3C Verifiable Credentials, has strong capabilities for handling and processing complex data:
 
 * Global Linking of nodes of attestation data
 * Multi Key binding to nodes inside attestation data
