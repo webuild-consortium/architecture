@@ -27,6 +27,8 @@ The WP4 PID and LPID Providers and the WP4 QTSPs are expected to conform to thes
 
 The vocabularies that WP4 Semantics group delivers, may be in a format that is unrelated to the specified digital document formats.
 
+The WP4 Semantics group is expected to ensure semantic interoperability of digital documents using the specified digital document type, if the specified digital document type supports semantic mapping, such as in [Verifiable Credentials Data Model v2.0](https://www.w3.org/TR/vc-data-model-2.0/). If not, such as in [ISO/IEC 18013-5](https://www.iso.org/standard/69084.html) mdoc, extra translation may be needed to match vocabularies specified by the WP4 Semantics group. In such cases, the translation is the responsibility of the scheme owners.
+
 ## Consequences
 
 This decision clarifies the decision process regarding digital document formats for PID and eAA. Other decisions should be recorded soon after to specify the concrete formats for PID and eAA for European Digital Identity Wallets and for European Business Wallets.
