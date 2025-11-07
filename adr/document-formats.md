@@ -1,4 +1,4 @@
-# Specify digital document formats
+# Specify PID and eAA formats
 
 **Authors:**
 
@@ -6,7 +6,7 @@
 
 ## Context
 
-To issue PID, LPID, QeAA, PuB-eAA and eAA (“digital document” henceforth), it is necessary to specify a digital document format such as mdoc or a JWT-based one. While the EUDI implementing acts specify baseline standards, these specifications may not suffice for WE BUILD. For example, some specified standards need further profiling for interoperability. For some WE BUILD use cases, other standards may be necessary, for example to enable asynchronous interactions with EU Business Wallets, or to enable legal, technical and semantic interoperability with existing systems.
+To issue PID (including LPID) and eAA (including QeAA and PuB-EAA), it is necessary to specify a digital document format such as mdoc or a JWT-based one. While the EUDI implementing acts specify baseline standards, these specifications may not suffice for WE BUILD. For example, some specified standards need further profiling for interoperability. For some WE BUILD use cases, other standards may be necessary, for example to enable asynchronous interactions with EU Business Wallets, or to enable legal, technical and semantic interoperability with existing systems.
 
 Several WP4 groups are stakeholders in this, for example:
 
@@ -21,7 +21,7 @@ Out of scope of this evaluation were the dependencies with WP2 and WP3. After th
 
 ## Decision
 
-The WP4 Architecture group specifies digital document formats.
+The WP4 Architecture group specifies digital document formats for PID and eAA.
 
 The WP4 PID and LPID Providers and the WP4 QTSPs are expected to conform to these decisions.
 
@@ -29,11 +29,11 @@ The vocabularies that WP4 Semantics group delivers, may be in a format that is u
 
 ## Consequences
 
-This decision clarifies the decision process regarding digital document formats. Other decisions should be recorded soon after to specify the formats for PID, LPID, QeAA, PuB-eAA and eAA for European Digital Identity Wallets and for European Business Wallets.
+This decision clarifies the decision process regarding digital document formats for PID and eAA. Other decisions should be recorded soon after to specify the concrete formats for PID and eAA for European Digital Identity Wallets and for European Business Wallets.
 
-This decision creates an indirection between the vocabularies and the digital document formats, so that the extra translation may be needed if the format does not support semantic annotations. In this case, the translation is the responsibility of the scheme owners.
+This decision creates an indirection between the vocabularies and the digital document formats for PID and eAA, so that the extra translation may be needed if the format does not support semantic annotations. In this case, the translation is the responsibility of the scheme owners.
 
-As an alternative, it has been considered to decide on WP4 Semantics specifying digital document formats, which would facilitate semantic interoperability, potentially at the cost of technical and legal interoperability. However, since these are cross-cutting decisions, the Mapping Task Force suggests that instead the WP4 Semantics group advices the WP4 Architecture group so that the latter sufficiently takes semantic interoperability into account, for example the ability to support links to globally defined semantic models.
+As an alternative, it has been considered to decide on WP4 Semantics specifying digital document formats for PID and eAA, which would facilitate semantic interoperability, potentially at the cost of technical and legal interoperability. However, since these are cross-cutting decisions, the Mapping Task Force suggests that instead the WP4 Semantics group advices the WP4 Architecture group so that the latter sufficiently takes semantic interoperability into account, for example the ability to support links to globally defined semantic models.
 
 ## Advice
 
