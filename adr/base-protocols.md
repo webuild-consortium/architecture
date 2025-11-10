@@ -5,6 +5,8 @@
 - Leif Johansson, Sunet, Sweden
 - Sander Dijkhuis, Cleverbase, the Netherlands
 - Sarah Amandusson, Digg, Sweden
+- George J Padayatti, iGrant.io, Sweden
+- Lal Chandran, iGrant.io, Sweden
 
 ## Context
 The EUDI Wallet ecosystem is mandated by eIDAS to ensure secure, interoperable cross-border digital identity.
@@ -21,8 +23,8 @@ While the architecture decision to [Publish consortium trusted lists](trusted-li
 Each recognized role in the WE BUILD project - PID/LPID Providers, EAA Providers (including QEAA, Pub-EAA), Relying Parties, Wallet Providers, and Trust Service Providers — is REQUIRED to implement the corresponding technical profiles described here.
 Actors performing multiple roles MUST meet all requirements relevant to those roles.
 
-* Issuers MUST implement [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
-* Verifiers MUST implement [OpenID4VP version 1.0](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
+* PID/LPID Providers, EAA Providers (including QEAA, Pub-EAA) MUST implement [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
+* Relying Parties MUST implement [OpenID4VP version 1.0](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
 * Wallet Providers MUST implement in wallet solutions [OpenID4VCI version 1.0](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html) and [OpenID4VP version 1.0](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
 
 ## Consequences
@@ -34,6 +36,5 @@ The selected protocols may not suffice for async or proximity use cases. Once th
 
 ## Advice
 
-Once merged, this is our consortium’s decision. This does not mean all participants agree it is the best possible decision. In the decision making process, we have heard the following advice.
-- yyyy-mm-dd, Name, Affiliation, Country: OK or summary of advice
+Once merged, this is our consortium’s decision. This does not mean all participants agree it is the best possible decision. 
 
