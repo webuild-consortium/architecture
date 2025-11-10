@@ -8,6 +8,7 @@ Propose new ADRs using the [template](_template.md). Announce them to the [Archi
 
 <!--BEGIN INDEX-->
 1. [Publish consortium trusted lists](trusted-lists.md)
+2. [Baseline protocols](base-protocols.md)
 <!--END INDEX-->
 
 ## ADR process for WE BUILD
