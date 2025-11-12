@@ -82,7 +82,7 @@ This document proposes three optimization strategies, each aligned with differen
 3. **ZKP-optimized Web Token (ZWT):**
    Proposes a purpose-built format extending the ideas in (2), optimized explicitly for ZKP support and minimal circuit complexity.
 
-> **Note:** mdoc MSO is not included in the optimization proposals. While certain techniques (such as a modified proof structure) could be adapted, the extent of required changes is substantial. This likely offsets any benefits of reusing the format compared to SD-JWT VC or a purpose-built alternative.
+> **Note:** mdoc MSO is not included in the optimization proposals. While certain techniques (such as a modified proof structure) could be adapted, the extent of required changes is substantial. This likely offsets any benefits of reusing the format compared to SD-JWT VC or a purpose-built alternative. Alternatively, one could define transformation rules for mdoc MSO and SD-JWT VC and let issuers issue the core formats with two signatures, one over the core format and the other over the ZKP optimized transformation (OID4VCI support needs investigating).
 
 Each of the ideas are explored next.
 
