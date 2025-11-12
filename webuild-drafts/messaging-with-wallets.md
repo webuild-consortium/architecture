@@ -49,6 +49,7 @@ The eDelivery specifications include interoperability profiles of several standa
 | ISO 15000-2:2021 | [OASIS AS4 profile v1.0 of ebMS v3.0](https://docs.oasis-open.org/ebxml-msg/ebms/v3.0/profiles/AS4-profile/v1.0/AS4-profile-v1.0.html) | HTTP-based interface             |
 | ISO 15000-3:2023 | [OASIS ebXML RegRep v4.0](https://www.oasis-open.org/standard/ebxmlregrep/)                                                            | Registry and repository messages |
 | ISO 15000-5:2014 | [UN/CEFACT-CCTS v3.0](https://unece.org/trade/documents/2009/09/uncefact-core-components-technical-specification-version-30)           | Common semantics                 |
+
 Typically, eDelivery is explained in a four-corner model, such as in this example which connects two wallet instances:
 
 ```
