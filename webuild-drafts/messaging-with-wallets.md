@@ -146,7 +146,7 @@ The two most common interop networks are Once-Only (only accessible to EU Member
 
 ## Next steps for WP4
 
-For proper interoperable connectivity between WE BUILD consortium partners, WP4 needs to take some focused action towards a common eDelivery implementation. Below are suggested components that the WP4 groups can take into their tasks and deliverables.
+For proper interoperable connectivity between WE BUILD consortium partners, WP4 needs to undertake a coordinated effort towards a common eDelivery implementation. Below are suggested components that the WP4 groups can take into their tasks and deliverables.
 
 - **WP4 Architecture**
 	- Raise awareness at WP2/WP3 use cases and WP4 groups about the ability to include four-corner eDelivery models in their specifications.
