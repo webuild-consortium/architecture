@@ -26,7 +26,7 @@ Furthermore, modelling the complex attestations for the following WeBuild use ca
 
 * BU1 'KYC/KYB/KYD/Due Diligence' regarding the semantic modeling of KYC credentials as well as complex authorisations schemes for natural persons acting on behalf of legal persons
 * SC1 'Authentication and access for transport' regarding semantic alignment with public global vocabularies (e.g. railways)
-* SC2 'Trusted data sharing for data spaces' regarding complex policies for negotation and access to shared data as well as roles for automated actors and devices
+* SC2 'Trusted data sharing for data spaces' regarding credentials to support authorization policies for the three phases of the DSP protocol (Catalog Query, Contract Negotiation and Data Transfer) as well as roles for automated actors and devices
 * PA3 'Corporate banking and account opening': AML requires KYC and including delegation of authority
 
 In addition to semantic interoperability at a business level, existing ecosystems also require semantic compatibility at a technical level:
