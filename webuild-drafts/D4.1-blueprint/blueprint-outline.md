@@ -33,7 +33,3 @@ Briefly describes the purpose of the Blueprint in achieving a scalable, complian
 - Formal description of the **ADR process** for strategic decision-making and justification of major technical choices.  
 - Description of the **CS process** for dictating implementations and ensuring conformance within the consortium.  
 - Integration with the **Interoperability Testbed (ITB)**, defining how the architecture enables robust testing and validation (aligning with the **Testing Group / T4.5**).
-
-
-
-
