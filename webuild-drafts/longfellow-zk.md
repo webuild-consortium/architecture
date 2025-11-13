@@ -94,7 +94,9 @@ The SD-JWT VC specification permits several optimizations that can be applied wi
    The inclusion of digest values (`_sd`) is optional. Omitting it significantly improves performance and eliminates the need for multiple fields and, consequently, witness consistency tests.
 
 2. **No `cnf` or KB-JWT:**
-    A key insight is that the prover presents a proof of a verifiable computation over the presentation and **not** the SD-JWT VC itself. As a result, `cnf` and KB-JWT are not required for specification compliance. Their omission eliminates the need for token nesting and simplifies proof-of-possession logic. Instead, PoP is done using a new attribute `zk_cnf` that replicates `cnf` but uses a flat structure. Note that the PoP key can be hardware-bound. This prevents direct use of the private key in the ZK circuit, ruling out standard discrete-log knowledge proofs. One option is for the prover to generate a fresh signature over the witness and include this signature as public input to the circuit for validation.
+    A key insight is that the prover presents a proof of a verifiable computation over the presentation and **not** the SD-JWT VC itself. As a result, `cnf` and KB-JWT are not required for specification compliance. Their omission eliminates the need for token nesting and simplifies proof-of-possession logic. Instead, PoP is done using a new attribute `zk_cnf` that replicates `cnf` but uses a flat structure.
+
+> Note that the PoP key can be hardware-bound, which prevents direct use of the private key in the ZK circuit. One option is for the prover to generate a fresh signature over the witness and include this signature as public input to the circuit for validation. EDIT: I am not yet sure about the exact mechanism for replay protection. I can see multiple ways to do this but will need to clarify.
 
 3. **Limited predicates**
    Initially focusing on simple predicates (e.g., equality and range) allows for simple and auditable circuit implementations. Most use cases can be supported this way. Range predicates (e.g., for age or expiration checks) can be added incrementally as circuits are audited.
