@@ -9,12 +9,14 @@
 The Architecture and Reference Framework (ARF) currently focuses on the EUDI wallet for natural persons. The specific requirements of an EU business wallet (EUBW) for legal entities are not being thoroughly considered.
 
 The ARF defines the following three attestation formats:
-* The format specified in [ISO/IEC 18013-5](https://www.iso.org/standard/69084.html) and generalised in [ISO/IEC 23220-2](https://www.iso.org/standard/86782.html),
-* The format specified in 'SD-JWT-based Verifiable Credentials' [SD-JWT VC](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/),
-* The format specified in 'W3C Verifiable Credentials Data Model v2.0' [W3C VCDM 2.0](https://www.w3.org/TR/vc-data-model-2.0/).
+
+* `mDoc`: The format specified in [ISO/IEC 18013-5](https://www.iso.org/standard/69084.html) and generalised in [ISO/IEC 23220-2](https://www.iso.org/standard/86782.html),
+* `SD-JWT-VC`: The format specified in 'SD-JWT-based Verifiable Credentials' [SD-JWT VC](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/),
+* `W3C-VCDM`: The format specified in 'W3C Verifiable Credentials Data Model v2.0' [W3C VCDM 2.0](https://www.w3.org/TR/vc-data-model-2.0/).
+
 It also states that the third format is optional and intended for non-qualified EAAs only. This means that the wallet ecosystem must use one of the first two options for PID, LPID and QEAAs.
 
-Unfortunately, the first two options only allow the data structure of the attestation to be defined. They do not support mapping to globally defined semantic vocabularies. Global semantic interoperability cannot be achieved with these formats. This is accceptable for personal attestations with simple data structures (usually a flat list of data elements, e.g. mDL), which only require local semantic interoperability (e.g. defined within a local namespace, directly in the specification alongside the coding of the data [ISO/IEC 18013-5]( https://www.iso.org/standard/69084.html]). However, these formats are not suitable for attestations requiring semantic interoperability with globally defined vocabularies, e.g.:
+Unfortunately, the first two options only allow the data structure of the attestation to be defined. They do not support mapping to globally defined semantic vocabularies. Global semantic interoperability cannot be achieved with these formats. This is accceptable for personal attestations with simple data structures (usually a flat list of data elements, e.g. mDL), which only require local semantic interoperability (e.g. defined within a local namespace, directly in the specification alongside the coding of the data [ISO/IEC 18013-5]( https://www.iso.org/standard/69084.html])). However, these formats are not suitable for attestations requiring semantic interoperability with globally defined vocabularies, e.g.:
 
 * [eGoverment Core Vocabularies](https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/e-government-core-vocabularies)
 * [UN Transparency Protocol - UNTP Web Vocabularies](https://test.uncefact.org/vocabulary/untp/home)
@@ -22,7 +24,7 @@ Unfortunately, the first two options only allow the data structure of the attest
 * [Common data - schema.org](https://schema.org/)
 * [DssC Dataspaces - Identity Credentials](https://dssc.eu/space/BVE2/1071254873/Building+on+Top+of+Foundational+Technical+Standards#2.1-Verifiable-Credentials)
 
-Furthermore, modelling the complex attestations for the following WeBuild use cases requires comprehensive conceptual modelling support. Neither the mDoc nor SD-JWT-VC format supports mapping to these models:
+Furthermore, modelling the complex attestations for the following WE BUILD use cases requires comprehensive conceptual modelling support. Neither the `mDoc` nor `SD-JWT-VC` format supports mapping to these models:
 
 * BU1 'KYC/KYB/KYD/Due Diligence' regarding the semantic modeling of KYC credentials as well as complex authorisations schemes for natural persons acting on behalf of legal persons
 * SC1 'Authentication and access for transport' regarding semantic alignment with public global vocabularies (e.g. railways)
@@ -35,7 +37,7 @@ In addition to semantic interoperability at a business level, existing ecosystem
 * Linked Data: [JSON-based Serialization for Linked Data](https://www.w3.org/TR/json-ld11/)
 * Decentralized Identifiers: [DID](https://www.w3.org/ns/did/v1)
 
-Finally, integration of complex attestations into existing business solutions require strong capabilities for handling and processing semantic data. JSON-LD, the chosen serialisation format for W3C Verifiable Credentials, provides these capabilities:
+Finally, integration of complex attestations into existing business solutions require strong capabilities for handling and processing semantic data. JSON-LD, the serialisation format of `W3C-VCDM` Credentials, provides these capabilities:
 
 * Global Linking of nodes of attestation data
 * Multi Key binding to nodes inside attestation data
@@ -43,11 +45,16 @@ Finally, integration of complex attestations into existing business solutions re
 * semantic data processing
 * data framing
 
-Restricting EUBW usage to mDoc and SD-JWT-VC would greatly reduce the range of supported ecosystems and implementation options. Furthermore, it becomes difficult or almost impossible to implement use cases requiring complex attestation, support for linked attestations, and interoperability with global semantic vocabularies.
+Last but not least, semantic modelling allows for:
+* unambiguous interpretation of the data,
+* giving stronger, legally sound transactions and
+* more automation and reducing modelling (documentation) effort.
+
+Restricting EUBW usage to `mDoc` and `SD-JWT-VC` would greatly reduce the range of supported ecosystems and implementation options. Furthermore, it becomes difficult or almost impossible to implement use cases requiring complex attestation, support for linked attestations, and interoperability with global semantic vocabularies.
 
 ## Decision
 
-Define W3C VCDM 2.0 as the preferred attestation format for the EUBW.
+Define `W3C-VCDM` as the preferred attestation format for the EUBW.
 
 Allow the use case owners to define the mandatory and optional attestation formats depending on the specific needs of their use cases.
 
@@ -65,7 +72,7 @@ W3C provides a mature set of recommendations regarding verifiable credentials. R
 
 **What will become more difficult?**
 
-Supporting different attestation formats can result in extra mapping. Therefore, it is recommended that the preferred attestation format for EUBW (VCDM2.0) is used to avoid extra mapping between formats.
+Supporting different attestation formats can result in extra mapping. Therefore, it is recommended that the preferred attestation format for EUBW (Ẁ3C-VCDM`) is used to avoid extra mapping between formats.
 
 JSON-LD adds additional semantic information to JSON data (`@context`, `@id` and `@type`). While this can introduce additional complexity for simple data, it improves semantic alignment and avoids extra mapping between local defined vocabularies. The use case owner should carefully select the most suitable attestation format, striking a balance between simplicity and interoperability. 
 
