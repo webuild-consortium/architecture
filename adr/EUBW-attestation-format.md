@@ -72,7 +72,7 @@ W3C provides a mature set of recommendations regarding verifiable credentials. R
 
 **What will become more difficult?**
 
-Supporting different attestation formats can result in extra mapping. Therefore, it is recommended that the preferred attestation format for EUBW (Ẁ3C-VCDM`) is used to avoid extra mapping between formats.
+Supporting different attestation formats can result in extra mapping. Therefore, it is recommended that the preferred attestation format for EUBW (`W3C-VCDM`) is used to avoid extra mapping between formats.
 
 JSON-LD adds additional semantic information to JSON data (`@context`, `@id` and `@type`). While this can introduce additional complexity for simple data, it improves semantic alignment and avoids extra mapping between local defined vocabularies. The use case owner should carefully select the most suitable attestation format, striking a balance between simplicity and interoperability. 
 
