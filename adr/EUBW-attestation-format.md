@@ -16,7 +16,7 @@ The ARF defines the following three attestation formats:
 
 It also states that the third format is optional and intended for non-qualified EAAs only. This means that the wallet ecosystem must use one of the first two options for PID, LPID and QEAAs.
 
-Unfortunately, the first two options only allow the data structure of the attestation to be defined. They do not support mapping to globally defined semantic vocabularies. Global semantic interoperability cannot be achieved with these formats. This is accceptable for personal attestations with simple data structures (usually a flat list of data elements, e.g. mDL), which only require local semantic interoperability (e.g. defined within a local namespace, directly in the specification alongside the coding of the data [ISO/IEC 18013-5]( https://www.iso.org/standard/69084.html])). However, these formats are not suitable for attestations requiring semantic interoperability with globally defined vocabularies, e.g.:
+Unfortunately, the first two options only allow the data structure of the attestation to be defined. They do not support mapping to globally defined semantic vocabularies. Global semantic interoperability cannot be achieved with these formats. This is accceptable for personal attestations with simple data structures (usually a flat list of data elements, e.g. mDL), which only require local semantic interoperability (e.g. defined within a local namespace, directly in the specification alongside the coding of the data [ISO/IEC 18013-5]( https://www.iso.org/standard/69084.html])). However, these formats are not suitable for use cases requiring deeply structured and linked attestations, such as expressing the share holder structure of a company for AML (anti-money laundering) compliance, or for attestations requiring semantic interoperability with globally defined vocabularies, e.g.:
 
 * [eGoverment Core Vocabularies](https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/e-government-core-vocabularies)
 * [UN Transparency Protocol - UNTP Web Vocabularies](https://test.uncefact.org/vocabulary/untp/home)
@@ -39,16 +39,17 @@ In addition to semantic interoperability at a business level, existing ecosystem
 
 Finally, integration of complex attestations into existing business solutions require strong capabilities for handling and processing semantic data. JSON-LD, the serialisation format of `W3C-VCDM` Credentials, provides these capabilities:
 
-* Global Linking of nodes of attestation data
-* Multi Key binding to nodes inside attestation data
-* data transformation and canonicalisation
-* semantic data processing
-* data framing
+* Global Linking of nodes of attestation data (e.g. share holder structures)
+* Multi Key binding to nodes inside attestation data (e.g. list of legal representatvies)
+* data transformation and canonicalisation (e.g. RDF Dataset Canonicalization)
+* semantic data processing (e.g. semantic mapping of claims into existing master data) 
+* data framing (e.g. selective disclosure and query of selected credentials and claims) 
 
-Last but not least, semantic modelling allows for:
+Last but not least, `W3C-VCDM` credentials allows for:
 * unambiguous interpretation of the data,
-* giving stronger, legally sound transactions and
-* more automation and reducing modelling (documentation) effort.
+* giving stronger, legally sound transactions,
+* more automation and reducing modelling (documentation) effort,
+* supporting eco systems which already use `W3C-VCDM` credentials (e.g. data spaces, DPP, supply chains, etc.)
 
 Restricting EUBW usage to `mDoc` and `SD-JWT-VC` would greatly reduce the range of supported ecosystems and implementation options. Furthermore, it becomes difficult or almost impossible to implement use cases requiring complex attestation, support for linked attestations, and interoperability with global semantic vocabularies.
 
