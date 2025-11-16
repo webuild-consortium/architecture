@@ -72,7 +72,7 @@ Typically, eDelivery is explained in a four-corner model, such as in this exampl
 
 In eDelivery, the C2-C3 interaction is standardised, and supports several message exchange patterns (see [illustrations by IBM](https://www.ibm.com/docs/en/wm-b2b?topic=agreements-message-exchange-patterns)): one-way/push, one-way/pull, two-way/sync (i.e. HTTP request-response), two-way/push-pull, two-way/push-push. Between submission and retrieval of messages, the access points can store them. This enables dealing with various expectations about availability of the sender, the recipient, and their access points. For example, while some natural or legal persons may be able to deploy a highly-available access point server for inbound HTTP requests, others may just be able to make outbound HTTP requests using a client with limited internet connectivity.
 
-This is a similar issue as addressed in DC4EU for document issuance with the [Datastore REST API](https://github.com/dc4eu/vc/blob/main/standards/api_specification.md). However, where the Datastore REST API requires a centralised service provider for both sender and recipient, the 
+This is a similar issue as addressed in DC4EU for document issuance with the [Datastore REST API](https://github.com/dc4eu/vc/blob/main/standards/api_specification.md). However, where the Datastore REST API requires a centralised service provider for both sender and recipient, the eDelivery approach is more decentralised by enabling the sender and the recipient to choose their own access points.
 
 The C1-C2 and C3-C4 interactions are not standardised in eDelivery. Example interfaces are:
 
