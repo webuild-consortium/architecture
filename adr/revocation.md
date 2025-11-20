@@ -59,7 +59,7 @@ supports TSL.
 
 ## Decision
 
-The TSL MUST be used to implement status lists when revocation is
+The TSL (draft 13) MUST be used to implement status lists when revocation is
 required (e.g., in long-lived credentials).
 
 ## Consequences
