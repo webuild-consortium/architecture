@@ -16,11 +16,15 @@
 </p>
 
 ## About
-[WE BUILD](https://www.webuildconsortium.eu/) is adopting and adapting this repository, starting with [architecture decision records](adr/README.md) and the suggested approach to interface alignment described on this page. 
+This repository section provides the WE BUILD Conformance Specifications (CSs), defining the implementation interfaces and interoperability requirements agreed upon in the consortium.
+
+The CSs operationalize the architectural decisions documented in the [ADRs](../adr/README.md) and are synthesized at a strategic level in the [Architecture & Integration Blueprint](../webuild-drafts/D4.1-blueprint/README.md).
 
 ## Contributing
 
 For members of the consortium, discussions on the ADR and CS processes are held on [open social - Architecture Group](https://portal.webuildconsortium.eu/group/architecture). Pull requests always welcome! 
+
+Reviews and approvals are currently coordinated by the [Blueprint Coordination Group](https://github.com/orgs/webuild-consortium/teams/blueprint-coordination-group).
 
 ## CS Process Summary for WE BUILD Large Scale Pilots (LSPs)
 
