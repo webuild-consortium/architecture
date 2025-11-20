@@ -22,8 +22,10 @@ Briefly describes the purpose of the Blueprint in achieving a scalable, complian
 - Definition of core architectural design patterns promoting reusability and interoperability across business and citizen systems.
 
 ## 3. Core Technical Components and Interfaces (Integration Requirements)
-- Overview of the integrated capabilities provided by WP4 groups (e.g., Wallet, PID/LPID, QTSP, Trust Registry).  
+- Overview of the integrated capabilities provided by WP4 groups, e.g., Wallet, PID/LPID, QTSP, Trust Registry ([ADR 1](../../adr/trusted-lists.md)).
 - High-level definitions for wallet interfaces and communication protocols for issuers/verifiers (further detailed in the subsequent Conformance Specifications).
+    - Base protocols: [ADR 2](../../adr/base-protocols.md)
+    - Document formats: [ADR 3](../../adr/document-formats.md)
 
 ## 4. Data and Semantics Integration
 - Strategy for achieving semantically interoperable electronic attestations and data models (aligning with the **Semantics Group / T4.2**).  
