@@ -2,11 +2,7 @@
 
 ## Overview
 
-This document describes three implementation scenarios for Relying Party Intermediaries (RPI) as defined in **ETSI TS 119 612 clause 5.5.1** and the **eIDAS 2.0 regulation** (Article 5b(10)).
-
-the following requirement may be subject of the implementation choices described in this document:
-
-> **Intermediaries acting on behalf of relying parties shall be deemed to be relying parties and shall not store data about the content of the transaction.**
+This document describes three implementation scenarios for Relying Party Intermediaries (RPI) where only the first one it the only one that is compliant with the requirements defined in **ETSI TS 119 612 clause 5.5.1** and the **eIDAS 2.0 regulation** (Article 5b(10)).
 
 ## Terminology
 
@@ -22,6 +18,11 @@ the following requirement may be subject of the implementation choices described
 ## Scenario 1: RPI Transparent Frontend (eIDAS Model)
 
 **Real-world example:** Private organization providing aggregation services and interoperability solutions.
+
+This scenario mets the following requirement:
+
+> **Intermediaries acting on behalf of relying parties shall be deemed to be relying parties and shall not store data about the content of the transaction.**
+
 
 ### Description
 
@@ -120,7 +121,7 @@ sequenceDiagram
 
 ## Scenario 2: RP Proxy Frontend
 
-**Real-world example:** Public organization with hundreds of services under same domain, same data regulation/handling, no cross-domain interactions.
+**Real-world example:** Private or Public organization with hundreds of services under same domain, same data regulation/handling, no cross-domain interactions.
 
 ### Description
 
@@ -210,23 +211,23 @@ The RP is registered as a **pure RP** with its own endpoints in access certifica
 ```mermaid
 graph TB
     subgraph "RP Infrastructure"
-        RP[RP Frontend<br/>Access Cert with SAN URIs]
+        RP["RP Frontend<br/>Access Cert with SAN URIs"]
         subgraph "OpenID4VP Endpoints"
-            REQ[/request_uri]
-            RESP[/response_uri]
+            REQ["request_uri"]
+            RESP["response_uri"]
         end
     end
     
     subgraph "RPI Backend Service"
-        API[RPI API]
-        TRUST[Trust Evaluation]
-        REV[Revocation Check]
-        SIG[Signature Validation]
-        CONV[Format Converter]
+        API["RPI API"]
+        TRUST["Trust Evaluation"]
+        REV["Revocation Check"]
+        SIG["Signature Validation"]
+        CONV["Format Converter"]
     end
     
-    WI[Wallet Instance]
-    REG[Registrar]
+    WI["Wallet Instance"]
+    REG["Registrar"]
     
     REG -->|issues certs| RP
     WI <-->|OID4VP| RP
@@ -236,7 +237,7 @@ graph TB
     API --> SIG
     API --> CONV
     
-    CONV -->|JSON/XML/SAML/ID Token| RP
+    CONV -->|"JSON/XML/SAML/ID Token"| RP
 ```
 
 ### Sequence Diagram
