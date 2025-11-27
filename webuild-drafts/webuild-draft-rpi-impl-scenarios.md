@@ -87,13 +87,21 @@ sequenceDiagram
     RPI->>REG: Register Subordinate RP + evidence
     REG-->>RPI: Subordinate RP Registration Certificate
     
-    Note over User,SRP: Presentation Flow
-    SRP->>RPI: Request presentation (RPI_05)
-    Note right of SRP: Includes: name, ID, registrar URL,<br/>intended use, reg cert reference
+    Note over User,SRP: Presentation Flow (OpenID4VP)
     
-    RPI->>WI: Presentation Request (RPI_06)
-    Note right of RPI: Contains: RPI Access Cert +<br/>Subordinate RP Reg Cert
+    User->>SRP: Request protected resource
+    SRP->>SRP: Authentication required
+    SRP-->>User: Redirect to RPI (authorization endpoint)
+    Note right of SRP: Includes: state, client_id,<br/>intended use reference
     
+    User->>RPI: Follow redirect
+    RPI->>RPI: Build presentation request (RPI_05, RPI_06)
+    Note right of RPI: Assemble: RPI Access Cert +<br/>Subordinate RP Reg Cert
+    
+    RPI->>WI: OID4VP Authorization Request
+    Note right of RPI: request_uri or request object<br/>signed with RPI key
+    
+    WI->>WI: Fetch/parse request
     WI->>WI: Verify RPI Access Cert
     WI->>WI: Verify Subordinate RP Reg Cert
     WI->>WI: Check intermediary association (RPRC_04)
@@ -102,8 +110,10 @@ sequenceDiagram
     Note right of WI: "RPI Name" acting for<br/>"Subordinate RP Name"
     
     User->>WI: Approve
-    WI-->>RPI: VP Response
-    RPI-->>SRP: Attributes (no storage per Art 5b(10))
+    WI-->>RPI: VP Token (response_uri)
+    RPI->>RPI: Verify VP, extract attributes
+    RPI-->>SRP: Attributes (no storage per Art 5b(10)) using a format known to the SRP
+    SRP-->>User: Access granted + session
 ```
 
 ---
