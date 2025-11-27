@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes three implementation scenarios for Relying Party Intermediaries (RPI) where only the first one it the only one that is compliant with the requirements defined in **ETSI TS 119 612 clause 5.5.1** and the **eIDAS 2.0 regulation** (Article 5b(10)).
+This document describes three implementation scenarios for Relying Party Intermediaries (RPI) where only the first one is the only compliant with the requirements defined in **ETSI TS 119 612 clause 5.5.1** and the **eIDAS 2.0 regulation** (Article 5b(10)).
 
 ## Terminology
 
