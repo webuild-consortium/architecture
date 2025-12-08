@@ -15,6 +15,8 @@
 
 [The Architecture & Integration Blueprint (D4.1)](/blueprint/README.md) provides the strategic, high-level framework that connects the detailed architectural decisions (ADRs) and conformance specifications (CSs) into a unified view of the WE BUILD architecture.
 
+[WE BUILD Drafts](/webuild-drafts) are work-in-progress material and contains notes, exploratory material, and ideas that are not yet mature enough to be included in the official Blueprint, ADRs, or Conformance Specifications.
+
 ## Funding
 
 ![image](https://github.com/webuild-consortium/architecture/blob/main/images/EUFunded.png)
