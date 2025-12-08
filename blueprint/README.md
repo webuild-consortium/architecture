@@ -14,7 +14,7 @@ The Blueprint synthesises approved ADRs and CSs to:
 
 | Document | Description |
 |-----------|--------------|
-| [Blueprint Process](./blueprint.md) | Suggested chapter structure for D4.1 and how content will evolve. |
+| [Blueprint document](./blueprint.md) | Suggested chapter structure for D4.1 and how content will evolve. |
 
 ## Relation to Other Processes
 - [Architecture Decision Records (ADRs)](./adr/README.md) capture architectural reasoning and decisions.  
