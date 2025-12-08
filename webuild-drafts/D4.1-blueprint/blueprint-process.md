@@ -30,6 +30,7 @@ The **Blueprint Coordination Group** ([@webuild-consortium/blueprint-coordinatio
  **Specifically, the group shall:**
 - Review and approve incoming ADR pull requests that affect architectural scope or integration requirements.  
 - Ensure that approved ADRs and CSs are consistently reflected in the Blueprint.  
+- Review Conformance Specifications
 - Maintain the Blueprint as a living document and coordinate updates across WP4 capability groups.
 
 The Blueprint thus serves as the single, high-level reference for the project’s architecture — simplifying governance and ensuring traceability between architectural reasoning (ADRs), implementation specifications (CSs), and the overarching project framework.
