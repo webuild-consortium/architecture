@@ -1,4 +1,4 @@
-# D4.1 Architecture & Integration Blueprint
+# WE BUILD – Architecture & Integration Blueprint (D4.1)
 
 The **Architecture & Integration Blueprint (D4.1)** provides the strategic, high-level framework that connects the detailed architectural decisions (ADRs) and conformance specifications (CSs) into a unified view of the WE BUILD architecture.
 
@@ -14,9 +14,7 @@ The Blueprint synthesises approved ADRs and CSs to:
 
 | Document | Description |
 |-----------|--------------|
-| [Blueprint Process](./blueprint-process.md) | Describes how the Blueprint is maintained, including BCG’s role and relation to ADR/CS workflows. |
-| [Proposed Outline](./blueprint-outline.md) | Suggested chapter structure for D4.1 and how content will evolve. |
-
+| [Blueprint Process](./blueprint.md) | Suggested chapter structure for D4.1 and how content will evolve. |
 
 ## Relation to Other Processes
 - [Architecture Decision Records (ADRs)](./adr/README.md) capture architectural reasoning and decisions.  
