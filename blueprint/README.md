@@ -17,6 +17,6 @@ The Blueprint synthesises approved ADRs and CSs to:
 | [Blueprint document](./blueprint.md) | Suggested chapter structure for D4.1 and how content will evolve. |
 
 ## Relation to Other Processes
-- [Architecture Decision Records (ADRs)](./adr/README.md) capture architectural reasoning and decisions.  
-- [Conformance Specifications (CSs)](./conformance-specs/README.md) define technical implementations and interoperability rules.  
+- [Architecture Decision Records (ADRs)](../adr/README.md) capture architectural reasoning and decisions.  
+- [Conformance Specifications (CSs)](../conformance-specs/README.md) define technical implementations and interoperability rules.  
 - The Blueprint consolidates both into a single reference architecture.
