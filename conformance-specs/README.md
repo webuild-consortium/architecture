@@ -29,8 +29,8 @@ Conformance Specifications (CS) progress through the following process towards t
 
 | **CS #** | **CS Title**                                                                         |
 | -------- | ------------------------------------------------------------------------------------ |
-| CS-001   | [Credential Issuance - v1.0](conformance-specs/cs-01-credential-issuance.md)         |
-| CS-002   | [Credential Presentation - v1.0](conformance-specs/cs-02-credential-presentation.md) |
+| CS-001   | [Credential Issuance - v1.0](cs-01-credential-issuance.md)         |
+| CS-002   | [Credential Presentation - v1.0](cs-02-credential-presentation.md) |
 |          |
 ### CSs Under Development
 
