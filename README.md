@@ -1,5 +1,5 @@
 <h1 align="center">
-   WE BUILD Conformance Specifications (CS)
+   WE BUILD WP4 Architecture Group 
 </h1>
 
 <p align="center">
@@ -8,46 +8,18 @@
     <a href="./LICENSE" title="License"><img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen?style=flat"></a>
 </p>
 
-<p align="center">
-  <a href="#about">About</a> •
-  <a href="#contributing">Contributing</a> •
-  <a href="#approved-css">Approved CSs</a> ••
-  <a href="#licensing">Licensing</a>
-</p>
-
 ## About
-[WE BUILD](https://www.webuildconsortium.eu/) is adopting and adapting this repository, starting with [architecture decision records](adr/README.md) and the suggested approach to interface alignment described on this page. 
+[Architecture decision records](adr/README.md) are lightweight architecture decision records (ADR) for each software-related decision affecting interoperability.
 
-## Contributing
+[Conformance Specifications (CS)](/conformance-specs/README.md) ensure interoperability and conformance by translating ADR decisions into precise implementation requirements.
 
-For members of the consortium, discussions on the ADR and CS processes are held on [open social - Architecture Group](https://portal.webuildconsortium.eu/group/architecture). Pull requests always welcome! 
-
-## CS Process Summary for WE BUILD Large Scale Pilots (LSPs)
-
-Conformance Specifications (CS) progress through the following process towards the Large Scale Pilots (LSPs):
-
-![CS Process and Roles](https://github.com/webuild-consortium/architecture/blob/main/images/WPRoles.png)
-
-## Current CSs
-
-### Approved CSs
-
-| **CS #** | **CS Title**                                                                         |
-| -------- | ------------------------------------------------------------------------------------ |
-| CS-001   | [Credential Issuance - v1.0](conformance-specs/cs-01-credential-issuance.md)         |
-| CS-002   | [Credential Presentation - v1.0](conformance-specs/cs-02-credential-presentation.md) |
-|          |
-### CSs Under Development
-
-| **CS #** | **CS Title** |
-| -------- | ------------ |
-|          |              |
+[The Architecture & Integration Blueprint (D4.1)](/blueprint/README.md) provides the strategic, high-level framework that connects the detailed architectural decisions (ADRs) and conformance specifications (CSs) into a unified view of the WE BUILD architecture.
 
 ## Funding
 
 ![image](https://github.com/webuild-consortium/architecture/blob/main/images/EUFunded.png)
 
-The project is co-funded by the European Union. However, the views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority. Neither the European Union nor the granting authority can be held responsible.
+[WE BUILD](https://www.webuildconsortium.eu/) is co-funded by the European Union. However, the views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority. Neither the European Union nor the granting authority can be held responsible.
 
 ## Licensing
 
